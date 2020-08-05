@@ -21,6 +21,13 @@ public class SpawnerScript : MonoBehaviour
 
     private Vector3 RandomPos;
 
+    private bool IsSpawning;
+
+    public Transform CameraPos;
+    private float CameraDistance;
+
+    public float MaxSpawnDistance = 40;
+
 
 
 
@@ -41,7 +48,7 @@ public class SpawnerScript : MonoBehaviour
     void Update() {
         timer += Time.deltaTime;
 
-        
+        CameraDistance = Vector3.Distance(transform.position, CameraPos.position);
 
         Randomizer = Random.Range(-20,20);
 
@@ -53,7 +60,14 @@ public class SpawnerScript : MonoBehaviour
         spawnTimeRandom = Random.Range(spawnTime,(spawnTime+10));
         spawnDelayRandom = Random.Range(spawnDelay, (spawnDelay +10));
 
-        if (timer > spawnDelayRandom) {
+        if (CameraDistance > MaxSpawnDistance) {
+
+            IsSpawning = false;
+        } else {
+            IsSpawning = true;
+        }
+
+        if (timer > spawnDelayRandom && IsSpawning) {
 
             SetNewPos();
             Spawn();

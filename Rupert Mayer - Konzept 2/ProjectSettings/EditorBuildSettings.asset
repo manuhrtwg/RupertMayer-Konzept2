@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/01_Scenes/BasicLebenslauf.unity
+    guid: 366cbadb973dffb43aaed9192cfbc744
+  - enabled: 1
+    path: Assets/01_Scenes/02_WW1_trenchScene.unity
+    guid: 8a5f48d5a7840404084b55a610551e79
   m_configObjects: {}
