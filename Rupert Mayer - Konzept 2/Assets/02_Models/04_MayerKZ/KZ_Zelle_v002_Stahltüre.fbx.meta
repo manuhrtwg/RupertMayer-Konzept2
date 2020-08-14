@@ -2,7 +2,10 @@ fileFormatVersion: 2
 guid: 8d8da591c797ff74792c32d5ca1b97da
 ModelImporter:
   serializedVersion: 19301
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: 1827073626107444601
+    second: Wand.002|Wand.002Action
   externalObjects:
   - first:
       type: UnityEngine:Material

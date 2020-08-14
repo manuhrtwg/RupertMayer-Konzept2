@@ -3,7 +3,19 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - ExcludeTeleport
+  - Fire
+  - Leg
+  - SnapCube
+  - Arm
+  - SnapCylinder
+  - Saucers
+  - Torso
+  - Head
+  - VRTKCameraRig
+  - TeleportIgnore
+  - ScenePositionObject
   layers:
   - Default
   - TransparentFX

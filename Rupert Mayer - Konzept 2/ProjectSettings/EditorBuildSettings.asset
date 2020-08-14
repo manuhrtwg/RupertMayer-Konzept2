@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/01_Scenes/02_WW1_trenchScene.unity
     guid: 8a5f48d5a7840404084b55a610551e79
   - enabled: 1
+    path: Assets/01_Scenes/03_Sondergericht.unity
+    guid: a7985ffa65b56dd4c8269e072e70e2c9
+  - enabled: 1
     path: Assets/01_Scenes/04_MayerInsideKZ.unity
     guid: ba43bfae25c559e40926e8909e11a0a3
   m_configObjects: {}
