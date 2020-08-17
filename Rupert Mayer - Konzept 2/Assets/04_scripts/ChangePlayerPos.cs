@@ -14,7 +14,7 @@ public class ChangePlayerPos : MonoBehaviour
 
         
 
-            if (PreviousScene == 1) {
+            if (PreviousScene == 1 ) {
 
                  transform.position = new Vector3(3,0,-3);
             } else if (PreviousScene == 2) {
@@ -25,7 +25,7 @@ public class ChangePlayerPos : MonoBehaviour
                 transform.position = new Vector3(128,0,-27);
             }
 
-        PlayerPrefs.SetInt("PreviousScene", 0);
+        PlayerPrefs.SetInt("PreviousScene", 1);
        
     }
 
