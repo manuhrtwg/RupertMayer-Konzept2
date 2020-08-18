@@ -2940,18 +2940,19 @@ MonoBehaviour:
     maxAllowedPerFrameDistanceDifference: 0.003
     smoothsRotation: 0
     maxAllowedPerFrameAngleDifference: 1.5
-  validCollisionColor: {r: 0, g: 1, b: 0, a: 1}
-  invalidCollisionColor: {r: 1, g: 0, b: 0, a: 1}
+  validCollisionColor: {r: 0.5566038, g: 0.8077376, b: 1, a: 0.5568628}
+  invalidCollisionColor: {r: 0.5188679, g: 0.43565324, b: 0.43565324, a: 0.3882353}
   tracerVisibility: 0
   cursorVisibility: 0
   maximumLength: 100
   scaleFactor: 0.002
-  cursorScaleMultiplier: 25
-  cursorMatchTargetRotation: 0
+  cursorScaleMultiplier: 70
+  cursorMatchTargetRotation: 1
   cursorDistanceRescale: 0
   maximumCursorScale: {x: Infinity, y: Infinity, z: Infinity}
   customTracer: {fileID: 0}
-  customCursor: {fileID: 0}
+  customCursor: {fileID: 4799165803377823743, guid: 65f328c9c8d640242b55f8b75fb52750,
+    type: 3}
 --- !u!114 &109582315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15970,10 +15971,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   operation: 1
-  checkType: 3
+  checkType: -1
   identifiers:
   - ExcludeTeleport
   - VRTK_DestinationPoint
+  - UI
 --- !u!1001 &579116691
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17204,7 +17206,7 @@ RectTransform:
   m_GameObject: {fileID: 628160003}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.74764, y: 0.74764, z: 0.74764}
+  m_LocalScale: {x: 1.2485588, y: 1.2485588, z: 1.2485588}
   m_Children:
   - {fileID: 952733835}
   m_Father: {fileID: 1129739483}
@@ -17212,7 +17214,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -114}
+  m_AnchoredPosition: {x: 0, y: 3}
   m_SizeDelta: {x: 1000, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &628160005
@@ -17258,7 +17260,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 701199509}
         m_MethodName: ChangeTheScene
         m_Mode: 3
         m_Arguments:
@@ -19457,6 +19459,7 @@ GameObject:
   - component: {fileID: 701199508}
   - component: {fileID: 701199509}
   - component: {fileID: 701199507}
+  - component: {fileID: 701199510}
   m_Layer: 0
   m_Name: SceneChangerObject
   m_TagString: Untagged
@@ -19504,6 +19507,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61ab438b443ef5a44ab9eaa993c79db8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &701199510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701199506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f8681019624fc043964b71dab7a5077, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentScene: 3
 --- !u!1 &701561223
 GameObject:
   m_ObjectHideFlags: 0
@@ -38945,6 +38961,7 @@ GameObject:
   - component: {fileID: 1129739480}
   - component: {fileID: 1129739479}
   - component: {fileID: 1129739478}
+  - component: {fileID: 1129739484}
   m_Layer: 5
   m_Name: WW1_UI_Canvas
   m_TagString: Untagged
@@ -39059,6 +39076,19 @@ RectTransform:
   m_AnchoredPosition: {x: -0.045, y: 1.976}
   m_SizeDelta: {x: 2000, y: 454.2}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1129739484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129739477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a793a35145c97834bb552788f1fd5768, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LookAtObject: {fileID: 2106770354}
 --- !u!1 &1130603756
 GameObject:
   m_ObjectHideFlags: 0
@@ -47268,7 +47298,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1361013835
 RectTransform:
   m_ObjectHideFlags: 0
@@ -49029,18 +49059,19 @@ MonoBehaviour:
     maxAllowedPerFrameDistanceDifference: 0.003
     smoothsRotation: 0
     maxAllowedPerFrameAngleDifference: 1.5
-  validCollisionColor: {r: 0, g: 1, b: 0, a: 1}
-  invalidCollisionColor: {r: 1, g: 0, b: 0, a: 1}
+  validCollisionColor: {r: 0.5566038, g: 0.8077376, b: 1, a: 0.5568628}
+  invalidCollisionColor: {r: 0.5188679, g: 0.43565324, b: 0.43565324, a: 0.3882353}
   tracerVisibility: 0
   cursorVisibility: 0
   maximumLength: 100
   scaleFactor: 0.002
-  cursorScaleMultiplier: 25
-  cursorMatchTargetRotation: 0
+  cursorScaleMultiplier: 70
+  cursorMatchTargetRotation: 1
   cursorDistanceRescale: 0
   maximumCursorScale: {x: Infinity, y: Infinity, z: Infinity}
   customTracer: {fileID: 0}
-  customCursor: {fileID: 0}
+  customCursor: {fileID: 4799165803377823743, guid: 65f328c9c8d640242b55f8b75fb52750,
+    type: 3}
 --- !u!114 &1408711852
 MonoBehaviour:
   m_ObjectHideFlags: 0

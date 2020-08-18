@@ -16,6 +16,7 @@ TagManager:
   - VRTKCameraRig
   - TeleportIgnore
   - ScenePositionObject
+  - NoAudioOnCol
   layers:
   - Default
   - TransparentFX
